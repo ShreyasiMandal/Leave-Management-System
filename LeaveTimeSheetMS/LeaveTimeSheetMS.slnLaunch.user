@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NotificationService\\NotificationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AuthService.Tests\\AuthService.Tests.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EmployeeService\\EmployeeService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "LeaveService.Tests\\LeaveService.Tests.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "LeaveService\\LeaveService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReportService\\ReportService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TimesheetService.Tests\\TimesheetService.Tests.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TimesheetService\\TimesheetService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

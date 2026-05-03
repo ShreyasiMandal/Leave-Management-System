@@ -1,0 +1,1281 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\notificationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\infastructure\\repositories\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\infastructure\\repositories\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\infastructure\\consumers\\usercreatedleaveconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\infastructure\\consumers\\usercreatedleaveconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|solutionrelative:authservice.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice.tests\\authservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|solutionrelative:authservice.tests\\authservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\application\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\application\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\services\\leavebalanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\services\\leavebalanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\infastructure\\repositories\\leavebalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\infastructure\\repositories\\leavebalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\application\\dtos\\employeerequestdtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\application\\dtos\\employeerequestdtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\application\\dtos\\employeeresponsedtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\application\\dtos\\employeeresponsedtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\infastructure\\consumers\\usercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\infastructure\\consumers\\usercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\interfaces\\ileavebalanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\interfaces\\ileavebalanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35EAD7FA-FC82-EA18-6015-E8840C341944}|Shared.Events\\Shared.Events.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\shared.events\\auth\\usercreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35EAD7FA-FC82-EA18-6015-E8840C341944}|Shared.Events\\Shared.Events.csproj|solutionrelative:shared.events\\auth\\usercreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\domain\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\domain\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\reportservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|solutionrelative:reportservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\domain\\entities\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\domain\\entities\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\domain\\entities\\leaveapprovalsagastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\domain\\entities\\leaveapprovalsagastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\dtos\\leaverequestdtos\\leaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\dtos\\leaverequestdtos\\leaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\domain\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\domain\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\timesheetservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\timesheetservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\consumers\\approveleavebalanceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\consumers\\approveleavebalanceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\infastructure\\repositories\\leavetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\infastructure\\repositories\\leavetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\interfaces\\ileavetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\interfaces\\ileavetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\infastructure\\messaging\\leaveeventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\infastructure\\messaging\\leaveeventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\reportservice\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|solutionrelative:reportservice\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\saga\\leaveapprovalstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\saga\\leaveapprovalstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\dtos\\leavebalancedtos\\adjustbalancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\dtos\\leavebalancedtos\\adjustbalancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\dtos\\leaverequestdtos\\createleaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\dtos\\leaverequestdtos\\createleaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\reportservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|solutionrelative:reportservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\reportservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F5B861CC-EAC8-43C9-80A0-24C68F05AE9A}|ReportService\\ReportService.csproj|solutionrelative:reportservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\notificationservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\consumers\\restoreleavebalanceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\consumers\\restoreleavebalanceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\notificationservice\\infastructure\\consumers\\timesheeteventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\infastructure\\consumers\\timesheeteventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\application\\interfaces\\itimesheeteventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\application\\interfaces\\itimesheeteventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\infastructure\\messaging\\timesheeteventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\infastructure\\messaging\\timesheeteventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35EAD7FA-FC82-EA18-6015-E8840C341944}|Shared.Events\\Shared.Events.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\shared.events\\timesheet\\timesheetcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35EAD7FA-FC82-EA18-6015-E8840C341944}|Shared.Events\\Shared.Events.csproj|solutionrelative:shared.events\\timesheet\\timesheetcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\application\\services\\timesheetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\application\\services\\timesheetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\notificationservice\\infastructure\\consumers\\leaveeventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\infastructure\\consumers\\leaveeventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\application\\services\\leavetypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\application\\services\\leavetypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5432ECC4-247E-4998-8D49-86D4FB03A317}|LeaveService.Tests\\LeaveService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice.tests\\services\\leaverequestservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5432ECC4-247E-4998-8D49-86D4FB03A317}|LeaveService.Tests\\LeaveService.Tests.csproj|solutionrelative:leaveservice.tests\\services\\leaverequestservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice.tests\\services\\timesheetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|solutionrelative:timesheetservice.tests\\services\\timesheetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice.tests\\timesheetservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|solutionrelative:timesheetservice.tests\\timesheetservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EE6144-1AB0-4EAB-A99B-4F445221518D}|TimesheetService.Tests\\TimesheetService.Tests.csproj|solutionrelative:timesheetservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5432ECC4-247E-4998-8D49-86D4FB03A317}|LeaveService.Tests\\LeaveService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5432ECC4-247E-4998-8D49-86D4FB03A317}|LeaveService.Tests\\LeaveService.Tests.csproj|solutionrelative:leaveservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F30E4E51-CEC7-45C3-B801-24CA32F3C9F7}|AuthService.Tests\\AuthService.Tests.csproj|solutionrelative:authservice.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\application\\dtos\\otpdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\application\\dtos\\otpdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\timesheetservice\\migrations\\20260410054934_timesheetmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D484562D-D773-4480-C7D8-D67D5C2C799B}|TimesheetService\\TimesheetService.csproj|solutionrelative:timesheetservice\\migrations\\20260410054934_timesheetmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\notificationservice\\migrations\\20260410054847_notifymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF9FD0F0-B9C2-54C6-189B-77AA3D46F4C2}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\migrations\\20260410054847_notifymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\migrations\\20260410054720_leavemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\migrations\\20260410054720_leavemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\migrations\\20260410054625_employeemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\migrations\\20260410054625_employeemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\authservice\\migrations\\20260410054232_authmigarion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}|AuthService\\AuthService.csproj|solutionrelative:authservice\\migrations\\20260410054232_authmigarion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\leaveservice\\migrations\\20260423073128_addcorrelationidtoleaverequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B900A253-5468-941E-59E3-F098A874A6C9}|LeaveService\\LeaveService.csproj|solutionrelative:leaveservice\\migrations\\20260423073128_addcorrelationidtoleaverequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|c:\\users\\hp\\source\\repos\\leavetimesheetms\\employeeservice\\migrations\\20260424055030_addgendertoemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53F5899-CBE3-ED74-91F4-4309BFEC1D72}|EmployeeService\\EmployeeService.csproj|solutionrelative:employeeservice\\migrations\\20260424055030_addgendertoemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Controllers\\LeaveController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "LeaveService\\Controllers\\LeaveController.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAIwCIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:09:35.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Program.cs",
+              "RelativeToolTip": "NotificationService\\Program.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAWwGgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:37:25.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LeaveRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveRequestService.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Services\\LeaveRequestService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveRequestService.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Services\\LeaveRequestService.cs",
+              "ViewState": "AgIAAF8BAAAAAAAAAAAIwIABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T10:29:20.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Program.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Program.cs",
+              "RelativeToolTip": "LeaveService\\Program.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:44:28.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveRequestRepository.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Infastructure\\Repositories\\LeaveRequestRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveRequestRepository.cs",
+              "RelativeToolTip": "LeaveService\\Infastructure\\Repositories\\LeaveRequestRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:12:33.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Program.cs",
+              "RelativeToolTip": "AuthService\\Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAWwHYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:35:30.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\Services\\AuthServiceTests.cs",
+              "RelativeDocumentMoniker": "AuthService.Tests\\Services\\AuthServiceTests.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\Services\\AuthServiceTests.cs",
+              "RelativeToolTip": "AuthService.Tests\\Services\\AuthServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:15:10.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCreatedLeaveConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Consumers\\UserCreatedLeaveConsumer.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Infastructure\\Consumers\\UserCreatedLeaveConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Consumers\\UserCreatedLeaveConsumer.cs",
+              "RelativeToolTip": "LeaveService\\Infastructure\\Consumers\\UserCreatedLeaveConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:56:06.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\AuthService.Tests.csproj",
+              "RelativeDocumentMoniker": "AuthService.Tests\\AuthService.Tests.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\AuthService.Tests.csproj",
+              "RelativeToolTip": "AuthService.Tests\\AuthService.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-26T06:29:03.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "AuthService\\Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T09:16:59.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Application\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "EmployeeService\\Application\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswBcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T05:11:44.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeService\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAqwK4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T15:57:03.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Application\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeService\\Application\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:42:43.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LeaveBalanceService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveBalanceService.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Services\\LeaveBalanceService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveBalanceService.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Services\\LeaveBalanceService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwJUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:48:00.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "AuthService\\Application\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "AuthService\\Application\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:52:59.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LeaveBalanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveBalanceRepository.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Infastructure\\Repositories\\LeaveBalanceRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveBalanceRepository.cs",
+              "RelativeToolTip": "LeaveService\\Infastructure\\Repositories\\LeaveBalanceRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:08:39.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateEmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\DTOs\\EmployeeRequestDTOs\\CreateEmployeeDto.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Application\\DTOs\\EmployeeRequestDTOs\\CreateEmployeeDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\DTOs\\EmployeeRequestDTOs\\CreateEmployeeDto.cs",
+              "RelativeToolTip": "EmployeeService\\Application\\DTOs\\EmployeeRequestDTOs\\CreateEmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:40:49.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\DTOs\\EmployeeResponseDTOs\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Application\\DTOs\\EmployeeResponseDTOs\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Application\\DTOs\\EmployeeResponseDTOs\\EmployeeDto.cs",
+              "RelativeToolTip": "EmployeeService\\Application\\DTOs\\EmployeeResponseDTOs\\EmployeeDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:40:27.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Infastructure\\Consumers\\UserCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Infastructure\\Consumers\\UserCreatedConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Infastructure\\Consumers\\UserCreatedConsumer.cs",
+              "RelativeToolTip": "EmployeeService\\Infastructure\\Consumers\\UserCreatedConsumer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T09:31:07.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ILeaveBalanceService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Interfaces\\ILeaveBalanceService.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Interfaces\\ILeaveBalanceService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Interfaces\\ILeaveBalanceService.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Interfaces\\ILeaveBalanceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:54:56.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\Shared.Events\\Auth\\UserCreatedEvent.cs",
+              "RelativeDocumentMoniker": "Shared.Events\\Auth\\UserCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\Shared.Events\\Auth\\UserCreatedEvent.cs",
+              "RelativeToolTip": "Shared.Events\\Auth\\UserCreatedEvent.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:51:09.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20260424055030_AddGenderToEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Migrations\\20260424055030_AddGenderToEmployee.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Migrations\\20260424055030_AddGenderToEmployee.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Migrations\\20260424055030_AddGenderToEmployee.cs",
+              "RelativeToolTip": "EmployeeService\\Migrations\\20260424055030_AddGenderToEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:50:30.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Domain\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "EmployeeService\\Domain\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T05:39:39.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Program.cs",
+              "RelativeDocumentMoniker": "ReportService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Program.cs",
+              "RelativeToolTip": "ReportService\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAIBJwDkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:54:45.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Program.cs",
+              "RelativeDocumentMoniker": "TimesheetService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Program.cs",
+              "RelativeToolTip": "TimesheetService\\Program.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAIBJwEoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:38:07.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Program.cs",
+              "RelativeToolTip": "ApiGateway\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAIBJwFYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T10:18:28.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserRoles.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Domain\\UserRoles.cs",
+              "RelativeDocumentMoniker": "AuthService\\Domain\\UserRoles.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Domain\\UserRoles.cs",
+              "RelativeToolTip": "AuthService\\Domain\\UserRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:44:31.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LeaveRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveRequestDtos\\LeaveRequestDto.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\DTOs\\LeaveRequestDtos\\LeaveRequestDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveRequestDtos\\LeaveRequestDto.cs",
+              "RelativeToolTip": "LeaveService\\Application\\DTOs\\LeaveRequestDtos\\LeaveRequestDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:07:12.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Domain\\Entities\\LeaveRequest.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveRequest.cs",
+              "RelativeToolTip": "LeaveService\\Domain\\Entities\\LeaveRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:11:37.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Program.cs",
+              "RelativeToolTip": "EmployeeService\\Program.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAIBJwIYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:36:26.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20260423073128_AddCorrelationIdToLeaveRequests.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Migrations\\20260423073128_AddCorrelationIdToLeaveRequests.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Migrations\\20260423073128_AddCorrelationIdToLeaveRequests.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Migrations\\20260423073128_AddCorrelationIdToLeaveRequests.cs",
+              "RelativeToolTip": "LeaveService\\Migrations\\20260423073128_AddCorrelationIdToLeaveRequests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:31:28.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LeaveType.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveType.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Domain\\Entities\\LeaveType.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveType.cs",
+              "RelativeToolTip": "LeaveService\\Domain\\Entities\\LeaveType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T09:08:14.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LeaveApprovalSagaState.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveApprovalSagaState.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Domain\\Entities\\LeaveApprovalSagaState.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Domain\\Entities\\LeaveApprovalSagaState.cs",
+              "RelativeToolTip": "LeaveService\\Domain\\Entities\\LeaveApprovalSagaState.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:23:20.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwHEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T06:34:45.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GatewayController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Controllers\\GatewayController.cs",
+              "RelativeDocumentMoniker": "ApiGateway\\Controllers\\GatewayController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Controllers\\GatewayController.cs",
+              "RelativeToolTip": "ApiGateway\\Controllers\\GatewayController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:18:18.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\appsettings.json",
+              "RelativeToolTip": "ApiGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T04:15:56.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EmployeeService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EmployeeService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-09T09:58:36.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Ocelot.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Ocelot.json",
+              "RelativeDocumentMoniker": "ApiGateway\\Ocelot.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Ocelot.json",
+              "RelativeToolTip": "ApiGateway\\Ocelot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-09T09:51:17.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiGateway\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiGateway\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-09T09:58:48.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TimesheetService.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\TimesheetService.csproj",
+              "RelativeDocumentMoniker": "TimesheetService\\TimesheetService.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\TimesheetService.csproj",
+              "RelativeToolTip": "TimesheetService\\TimesheetService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-22T09:38:02.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApproveLeaveBalanceConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Consumers\\ApproveLeaveBalanceConsumer.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Consumers\\ApproveLeaveBalanceConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Consumers\\ApproveLeaveBalanceConsumer.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Consumers\\ApproveLeaveBalanceConsumer.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T09:32:52.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ILeaveTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Interfaces\\ILeaveTypeRepository.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Interfaces\\ILeaveTypeRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Interfaces\\ILeaveTypeRepository.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Interfaces\\ILeaveTypeRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:50:26.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "LeaveTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveTypeRepository.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Infastructure\\Repositories\\LeaveTypeRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Repositories\\LeaveTypeRepository.cs",
+              "RelativeToolTip": "LeaveService\\Infastructure\\Repositories\\LeaveTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:52:39.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LeaveEventPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Messaging\\LeaveEventPublisher.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Infastructure\\Messaging\\LeaveEventPublisher.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Infastructure\\Messaging\\LeaveEventPublisher.cs",
+              "RelativeToolTip": "LeaveService\\Infastructure\\Messaging\\LeaveEventPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T04:22:29.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "ReportService\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "ReportService\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T10:02:54.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LeaveApprovalStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Saga\\LeaveApprovalStateMachine.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Saga\\LeaveApprovalStateMachine.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Saga\\LeaveApprovalStateMachine.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Saga\\LeaveApprovalStateMachine.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAIwPoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:09:15.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AdjustBalanceDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveBalanceDtos\\AdjustBalanceDto.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\DTOs\\LeaveBalanceDtos\\AdjustBalanceDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveBalanceDtos\\AdjustBalanceDto.cs",
+              "RelativeToolTip": "LeaveService\\Application\\DTOs\\LeaveBalanceDtos\\AdjustBalanceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:12:57.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20260410054934_TimesheetMigration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Migrations\\20260410054934_TimesheetMigration.cs",
+              "RelativeDocumentMoniker": "TimesheetService\\Migrations\\20260410054934_TimesheetMigration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Migrations\\20260410054934_TimesheetMigration.cs",
+              "RelativeToolTip": "TimesheetService\\Migrations\\20260410054934_TimesheetMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:49:35.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreateLeaveRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveRequestDtos\\CreateLeaveRequestDto.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\DTOs\\LeaveRequestDtos\\CreateLeaveRequestDto.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\DTOs\\LeaveRequestDtos\\CreateLeaveRequestDto.cs",
+              "RelativeToolTip": "LeaveService\\Application\\DTOs\\LeaveRequestDtos\\CreateLeaveRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:12:51.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20260410054847_NotifyMigration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Migrations\\20260410054847_NotifyMigration.cs",
+              "RelativeDocumentMoniker": "NotificationService\\Migrations\\20260410054847_NotifyMigration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Migrations\\20260410054847_NotifyMigration.cs",
+              "RelativeToolTip": "NotificationService\\Migrations\\20260410054847_NotifyMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:48:47.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20260410054720_LeaveMigration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Migrations\\20260410054720_LeaveMigration.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Migrations\\20260410054720_LeaveMigration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Migrations\\20260410054720_LeaveMigration.cs",
+              "RelativeToolTip": "LeaveService\\Migrations\\20260410054720_LeaveMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:47:20.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20260410054625_EmployeeMigration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Migrations\\20260410054625_EmployeeMigration.cs",
+              "RelativeDocumentMoniker": "EmployeeService\\Migrations\\20260410054625_EmployeeMigration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Migrations\\20260410054625_EmployeeMigration.cs",
+              "RelativeToolTip": "EmployeeService\\Migrations\\20260410054625_EmployeeMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:46:25.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\appsettings.json",
+              "RelativeDocumentMoniker": "ReportService\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\appsettings.json",
+              "RelativeToolTip": "ReportService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T05:52:05.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20260410054232_AuthMigarion.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Migrations\\20260410054232_AuthMigarion.cs",
+              "RelativeDocumentMoniker": "AuthService\\Migrations\\20260410054232_AuthMigarion.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Migrations\\20260410054232_AuthMigarion.cs",
+              "RelativeToolTip": "AuthService\\Migrations\\20260410054232_AuthMigarion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:42:32.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-09T09:49:56.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeService\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\appsettings.json",
+              "RelativeToolTip": "EmployeeService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-09T09:58:30.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Dockerfile",
+              "RelativeDocumentMoniker": "ReportService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ReportService\\Dockerfile",
+              "RelativeToolTip": "ReportService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:47:33.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Dockerfile",
+              "RelativeDocumentMoniker": "NotificationService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Dockerfile",
+              "RelativeToolTip": "NotificationService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:46:49.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Dockerfile",
+              "RelativeDocumentMoniker": "TimesheetService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Dockerfile",
+              "RelativeToolTip": "TimesheetService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:46:08.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Dockerfile",
+              "RelativeDocumentMoniker": "LeaveService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Dockerfile",
+              "RelativeToolTip": "LeaveService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:45:21.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Dockerfile",
+              "RelativeDocumentMoniker": "EmployeeService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\EmployeeService\\Dockerfile",
+              "RelativeToolTip": "EmployeeService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:44:37.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Dockerfile",
+              "RelativeDocumentMoniker": "AuthService\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Dockerfile",
+              "RelativeToolTip": "AuthService\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:43:43.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Dockerfile",
+              "RelativeDocumentMoniker": "ApiGateway\\Dockerfile",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\ApiGateway\\Dockerfile",
+              "RelativeToolTip": "ApiGateway\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T09:41:31.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RestoreLeaveBalanceConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Consumers\\RestoreLeaveBalanceConsumer.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Consumers\\RestoreLeaveBalanceConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Consumers\\RestoreLeaveBalanceConsumer.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Consumers\\RestoreLeaveBalanceConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T09:33:40.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TimesheetEventConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Infastructure\\Consumers\\TimesheetEventConsumer.cs",
+              "RelativeDocumentMoniker": "NotificationService\\Infastructure\\Consumers\\TimesheetEventConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Infastructure\\Consumers\\TimesheetEventConsumer.cs",
+              "RelativeToolTip": "NotificationService\\Infastructure\\Consumers\\TimesheetEventConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:56:38.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ITimesheetEventPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Application\\Interfaces\\ITimesheetEventPublisher.cs",
+              "RelativeDocumentMoniker": "TimesheetService\\Application\\Interfaces\\ITimesheetEventPublisher.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Application\\Interfaces\\ITimesheetEventPublisher.cs",
+              "RelativeToolTip": "TimesheetService\\Application\\Interfaces\\ITimesheetEventPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:50:01.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "TimesheetCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\Shared.Events\\Timesheet\\TimesheetCreatedEvent.cs",
+              "RelativeDocumentMoniker": "Shared.Events\\Timesheet\\TimesheetCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\Shared.Events\\Timesheet\\TimesheetCreatedEvent.cs",
+              "RelativeToolTip": "Shared.Events\\Timesheet\\TimesheetCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:48:26.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "TimesheetEventPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Infastructure\\Messaging\\TimesheetEventPublisher.cs",
+              "RelativeDocumentMoniker": "TimesheetService\\Infastructure\\Messaging\\TimesheetEventPublisher.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Infastructure\\Messaging\\TimesheetEventPublisher.cs",
+              "RelativeToolTip": "TimesheetService\\Infastructure\\Messaging\\TimesheetEventPublisher.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwE4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:48:26.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "TimesheetService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Application\\Services\\TimesheetService.cs",
+              "RelativeDocumentMoniker": "TimesheetService\\Application\\Services\\TimesheetService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService\\Application\\Services\\TimesheetService.cs",
+              "RelativeToolTip": "TimesheetService\\Application\\Services\\TimesheetService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAADwv0wAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:48:26.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "LeaveEventConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Infastructure\\Consumers\\LeaveEventConsumer.cs",
+              "RelativeDocumentMoniker": "NotificationService\\Infastructure\\Consumers\\LeaveEventConsumer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\NotificationService\\Infastructure\\Consumers\\LeaveEventConsumer.cs",
+              "RelativeToolTip": "NotificationService\\Infastructure\\Consumers\\LeaveEventConsumer.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAgwGwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T04:09:07.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "LeaveTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveTypeService.cs",
+              "RelativeDocumentMoniker": "LeaveService\\Application\\Services\\LeaveTypeService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService\\Application\\Services\\LeaveTypeService.cs",
+              "RelativeToolTip": "LeaveService\\Application\\Services\\LeaveTypeService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T10:27:26.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "LeaveRequestServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService.Tests\\Services\\LeaveRequestServiceTests.cs",
+              "RelativeDocumentMoniker": "LeaveService.Tests\\Services\\LeaveRequestServiceTests.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService.Tests\\Services\\LeaveRequestServiceTests.cs",
+              "RelativeToolTip": "LeaveService.Tests\\Services\\LeaveRequestServiceTests.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAIwJkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:20:18.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TimesheetServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\Services\\TimesheetServiceTests.cs",
+              "RelativeDocumentMoniker": "TimesheetService.Tests\\Services\\TimesheetServiceTests.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\Services\\TimesheetServiceTests.cs",
+              "RelativeToolTip": "TimesheetService.Tests\\Services\\TimesheetServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:22:24.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "TimesheetService.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\TimesheetService.Tests.csproj",
+              "RelativeDocumentMoniker": "TimesheetService.Tests\\TimesheetService.Tests.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\TimesheetService.Tests.csproj",
+              "RelativeToolTip": "TimesheetService.Tests\\TimesheetService.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-08T08:22:44.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TimesheetService.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\TimesheetService.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "TimesheetService.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:21:56.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "LeaveService.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\LeaveService.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "LeaveService.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:19:31.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "AuthService.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "AuthService.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:13:59.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "OtpDtos.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\DTOs\\OtpDtos.cs",
+              "RelativeDocumentMoniker": "AuthService\\Application\\DTOs\\OtpDtos.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\LeaveTimeSheetMS\\AuthService\\Application\\DTOs\\OtpDtos.cs",
+              "RelativeToolTip": "AuthService\\Application\\DTOs\\OtpDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T06:58:24.854Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

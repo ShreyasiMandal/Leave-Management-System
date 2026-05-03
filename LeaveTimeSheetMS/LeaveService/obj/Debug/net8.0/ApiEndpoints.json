@@ -1,0 +1,391 @@
+[
+  {
+    "ContainingType": "LeaveService.Controllers.HolidayController",
+    "Method": "GetByYear",
+    "RelativePath": "api/holidays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.HolidayController",
+    "Method": "Create",
+    "RelativePath": "api/holidays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.HolidayDtos.CreateHolidayDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.HolidayController",
+    "Method": "Delete",
+    "RelativePath": "api/holidays/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.HolidayController",
+    "Method": "CopyCalendar",
+    "RelativePath": "api/holidays/copy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.HolidayDtos.CopyCalendarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "Apply",
+    "RelativePath": "api/leaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveRequestDtos.CreateLeaveRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetLeaves",
+    "RelativePath": "api/leaves",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetById",
+    "RelativePath": "api/leaves/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "Approve",
+    "RelativePath": "api/leaves/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "correlationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "Cancel",
+    "RelativePath": "api/leaves/{id}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "HrApprove",
+    "RelativePath": "api/leaves/{id}/hr-approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "correlationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "HrReject",
+    "RelativePath": "api/leaves/{id}/hr-reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "correlationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveRequestDtos.RejectLeaveDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "Reject",
+    "RelativePath": "api/leaves/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "correlationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveRequestDtos.RejectLeaveDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetMyBalance",
+    "RelativePath": "api/leaves/balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetBalanceByUser",
+    "RelativePath": "api/leaves/balance/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "AdjustBalance",
+    "RelativePath": "api/leaves/balance/adjust",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveBalanceDtos.AdjustBalanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetHrPending",
+    "RelativePath": "api/leaves/hr-pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetPending",
+    "RelativePath": "api/leaves/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "GetLeaveTypes",
+    "RelativePath": "api/leaves/types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "CreateLeaveType",
+    "RelativePath": "api/leaves/types",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveTypeDtos.CreateLeaveTypeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "UpdateLeaveType",
+    "RelativePath": "api/leaves/types/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "LeaveService.Application.DTOs.LeaveTypeDtos.UpdateLeaveTypeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "ActivateLeaveType",
+    "RelativePath": "api/leaves/types/{id}/activate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.LeaveController",
+    "Method": "DeactivateLeaveType",
+    "RelativePath": "api/leaves/types/{id}/deactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveService.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LeaveService.WeatherForecast, LeaveService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

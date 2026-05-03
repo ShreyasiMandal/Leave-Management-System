@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Project Path="ApiGateway/ApiGateway.csproj" />
+  <Project Path="AuthService.Tests/AuthService.Tests.csproj" Id="f30e4e51-cec7-45c3-b801-24ca32f3c9f7" />
+  <Project Path="AuthService/AuthService.csproj" />
+  <Project Path="EmployeeService/EmployeeService.csproj" />
+  <Project Path="LeaveService.Tests/LeaveService.Tests.csproj" Id="5432ecc4-247e-4998-8d49-86d4fb03a317" />
+  <Project Path="LeaveService/LeaveService.csproj" />
+  <Project Path="NotificationService/NotificationService.csproj" />
+  <Project Path="ReportService/ReportService.csproj" Id="f5b861cc-eac8-43c9-80a0-24c68f05ae9a" />
+  <Project Path="Shared.Events/Shared.Events.csproj" />
+  <Project Path="TimesheetService.Tests/TimesheetService.Tests.csproj" Id="14ee6144-1ab0-4eab-a99b-4f445221518d" />
+  <Project Path="TimesheetService/TimesheetService.csproj" />
+</Solution>

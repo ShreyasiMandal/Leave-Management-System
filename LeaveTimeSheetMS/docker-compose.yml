@@ -1,0 +1,227 @@
+version: '3.8'
+
+services:
+
+  # ── INFRASTRUCTURE ──────────────────────────────────────────────────────────
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ltma-sqlserver
+    environment:
+      SA_PASSWORD: "LTMA@Strong123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - ltma-network
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd",
+             "-S", "localhost", "-U", "sa",
+             "-P", "LTMA@Strong123", "-Q", "SELECT 1"]
+      interval: 10s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: ltma-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks:
+      - ltma-network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      retries: 10
+
+  # ── MICROSERVICES ────────────────────────────────────────────────────────────
+
+  auth-service:
+    build:
+      context: .
+      dockerfile: AuthService/Dockerfile
+    container_name: ltma-auth
+    ports:
+      - "5001:5001"
+    environment:
+      ASPNETCORE_URLS: "http://+:5001"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__AuthDB: "Server=sqlserver;Database=LTMA_AuthDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: "guest"
+      RabbitMQ__Password: "guest"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  employee-service:
+    build:
+      context: .
+      dockerfile: EmployeeService/Dockerfile
+    container_name: ltma-employee
+    ports:
+      - "5002:5002"
+    environment:
+      ASPNETCORE_URLS: "http://+:5002"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__EmployeeDB: "Server=sqlserver;Database=LTMA_EmployeeDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: "guest"
+      RabbitMQ__Password: "guest"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  leave-service:
+    build:
+      context: .
+      dockerfile: LeaveService/Dockerfile
+    container_name: ltma-leave
+    ports:
+      - "5003:5003"
+    environment:
+      ASPNETCORE_URLS: "http://+:5003"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__LeaveDB: "Server=sqlserver;Database=LTMA_LeaveDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: "guest"
+      RabbitMQ__Password: "guest"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  timesheet-service:
+    build:
+      context: .
+      dockerfile: TimesheetService/Dockerfile
+    container_name: ltma-timesheet
+    ports:
+      - "5004:5004"
+    environment:
+      ASPNETCORE_URLS: "http://+:5004"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__TimesheetDB: "Server=sqlserver;Database=LTMA_TimesheetDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: "guest"
+      RabbitMQ__Password: "guest"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  notification-service:
+    build:
+      context: .
+      dockerfile: NotificationService/Dockerfile
+    container_name: ltma-notification
+    ports:
+      - "5005:5005"
+    environment:
+      ASPNETCORE_URLS: "http://+:5005"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__NotificationDB: "Server=sqlserver;Database=LTMA_NotificationDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: "guest"
+      RabbitMQ__Password: "guest"
+      Smtp__Host: "smtp.gmail.com"
+      Smtp__Port: "587"
+      Smtp__Username: "your@gmail.com"
+      Smtp__Password: "your-app-password"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  report-service:
+    build:
+      context: .
+      dockerfile: ReportService/Dockerfile
+    container_name: ltma-report
+    ports:
+      - "5006:5006"
+    environment:
+      ASPNETCORE_URLS: "http://+:5006"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__LeaveDB: "Server=sqlserver;Database=LTMA_LeaveDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      ConnectionStrings__TimesheetDB: "Server=sqlserver;Database=LTMA_TimesheetDB;User ID=sa;Password=LTMA@Strong123;TrustServerCertificate=True"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - ltma-network
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    container_name: ltma-gateway
+    ports:
+      - "5000:5000"
+    environment:
+      ASPNETCORE_URLS: "http://+:5000"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      Jwt__Key: "LTMA_SUPER_SECRET_KEY_MIN_32_CHARACTERS_HERE!!"
+      Jwt__Issuer: "LTMA-AuthService"
+      Jwt__Audience: "LTMA-Users"
+    depends_on:
+      - auth-service
+      - employee-service
+      - leave-service
+      - timesheet-service
+      - notification-service
+      - report-service
+    networks:
+      - ltma-network
+
+networks:
+  ltma-network:
+    driver: bridge
+
+volumes:
+  sqlserver_data:
