@@ -1,0 +1,165 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <h1>Leave Approvals</h1>
+    </div>
+
+    <div class="msg-bar" *ngIf="message">
+      {{ message }}
+      <button (click)="message=''" class="close-btn">✕</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button
+        [class.active]="activeTab === 'manager'"
+        (click)="activeTab = 'manager'"
+        class="tab-btn">
+        Manager Approvals
+        <span class="count">{{ managerPending.length }}</span>
+      </button>
+      <button *ngIf="isHR"
+        [class.active]="activeTab === 'hr'"
+        (click)="activeTab = 'hr'"
+        class="tab-btn">
+        HR Second-Level Approvals
+        <span class="count hr">{{ hrPending.length }}</span>
+      </button>
+    </div>
+
+    <!-- Manager Pending Tab -->
+    <div *ngIf="activeTab === 'manager'" class="card">
+      <div class="loading" *ngIf="loading">Loading...</div>
+
+      <table class="data-table"
+        *ngIf="!loading && managerPending.length > 0">
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Leave Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Days</th>
+            <th>Reason</th>
+            <th>HR Needed</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let l of managerPending">
+            <td>User #{{ l.userId }}</td>
+            <td>
+              <span class="badge">{{ l.leaveTypeCode }}</span>
+              {{ l.leaveTypeName }}
+            </td>
+            <td>{{ l.startDate | date:'dd MMM' }}</td>
+            <td>{{ l.endDate   | date:'dd MMM' }}</td>
+            <td><strong>{{ l.days }}</strong></td>
+            <td class="reason">{{ l.reason }}</td>
+            <td>
+              <span [class]="l.needsHrApproval ? 'badge-yes' : 'badge-no'">
+                {{ l.needsHrApproval ? 'Yes' : 'No' }}
+              </span>
+            </td>
+            <td class="actions">
+              <!--
+                ✅ FIX 1: [disabled] now uses isRowLoading(l.id) instead of the
+                shared actionLoading flag. Each row tracks its own loading state
+                independently — clicking Approve on row A does NOT disable row B.
+              -->
+              <button class="btn-approve" (click)="approve(l)"
+                [disabled]="isRowLoading(l.id)">
+                {{ isRowLoading(l.id) ? '⏳ Processing...' : '✅ Approve' }}
+              </button>
+              <button class="btn-reject"
+                (click)="openReject(l, 'manager')"
+                [disabled]="isRowLoading(l.id)">
+                ❌ Reject
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="empty"
+        *ngIf="!loading && managerPending.length === 0">
+        No pending leave requests for your approval.
+      </div>
+    </div>
+
+    <!-- HR Pending Tab -->
+    <div *ngIf="activeTab === 'hr' && isHR" class="card">
+      <table class="data-table" *ngIf="hrPending.length > 0">
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Leave Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Days</th>
+            <th>Reason</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let l of hrPending">
+            <td>User #{{ l.userId }}</td>
+            <td>
+              <span class="badge">{{ l.leaveTypeCode }}</span>
+              {{ l.leaveTypeName }}
+            </td>
+            <td>{{ l.startDate | date:'dd MMM' }}</td>
+            <td>{{ l.endDate   | date:'dd MMM' }}</td>
+            <td><strong>{{ l.days }}</strong></td>
+            <td class="reason">{{ l.reason }}</td>
+            <td class="actions">
+              <!-- ✅ FIX 1: Per-row loading for HR buttons too -->
+              <button class="btn-approve" (click)="hrApprove(l)"
+                [disabled]="isRowLoading(l.id)">
+                {{ isRowLoading(l.id) ? '⏳ Processing...' : '✅ HR Approve' }}
+              </button>
+              <button class="btn-reject"
+                (click)="openReject(l, 'hr')"
+                [disabled]="isRowLoading(l.id)">
+                ❌ HR Reject
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="empty" *ngIf="hrPending.length === 0">
+        No leaves waiting for HR second-level approval.
+      </div>
+    </div>
+
+    <!-- Reject Modal -->
+    <div class="modal-overlay" *ngIf="rejectModal">
+      <div class="modal">
+        <h3>Reject Leave Request</h3>
+        <p>Please provide a reason for rejection (mandatory):</p>
+        <textarea
+          [(ngModel)]="rejectComment"
+          rows="3"
+          class="form-control"
+          placeholder="Enter rejection reason...">
+        </textarea>
+        <div class="modal-actions">
+          <button class="btn-confirm-reject"
+            (click)="confirmReject()"
+            [disabled]="loadingIds.has(rejectLeaveId)">
+            {{ loadingIds.has(rejectLeaveId) ? '⏳ Processing...' : 'Confirm Rejection' }}
+          </button>
+          <button class="btn-cancel-modal"
+            (click)="rejectModal = false"
+            [disabled]="loadingIds.has(rejectLeaveId)">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>

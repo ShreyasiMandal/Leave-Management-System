@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <h1>My Leave Requests</h1>
+      <a routerLink="/leaves/apply" class="btn-primary">+ Apply Leave</a>
+    </div>
+
+    <div class="card">
+      <div class="loading" *ngIf="loading">Loading...</div>
+
+      <table class="data-table" *ngIf="!loading && leaves.length > 0">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Days</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Applied On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let l of leaves">
+            <td>
+              <span class="badge-code">{{ l.leaveTypeCode }}</span>
+              {{ l.leaveTypeName }}
+            </td>
+            <td>{{ l.startDate | date:'dd MMM yyyy' }}</td>
+            <td>{{ l.endDate   | date:'dd MMM yyyy' }}</td>
+            <td>{{ l.days }}</td>
+            <td>{{ l.reason }}</td>
+            <td>
+              <span [class]="getStatusClass(l.status)" class="status-badge">
+                {{ l.status }}
+              </span>
+            </td>
+            <td>{{ l.createdAt | date:'dd MMM yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="empty" *ngIf="!loading && leaves.length === 0">
+        No leave requests found.
+        <a routerLink="/leaves/apply">Apply for your first leave →</a>
+      </div>
+    </div>
+
+  </main>
+</div>

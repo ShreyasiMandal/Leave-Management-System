@@ -1,0 +1,125 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <div>
+        <h1>📁 Projects</h1>
+        <p class="subtitle">Manage projects for timesheet logging</p>
+      </div>
+      <div class="header-actions">
+        <button *ngIf="isHR" class="btn-primary" (click)="showCreateForm = !showCreateForm">
+          {{ showCreateForm ? 'Cancel' : '+ New Project' }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Message bar -->
+    <div class="msg-bar" *ngIf="message" [class.msg-error]="messageType === 'error'">
+      {{ message }}
+      <button (click)="message=''" class="close-btn">✕</button>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num">{{ projects.length }}</div>
+        <div class="stat-lbl">Total Projects</div>
+      </div>
+      <div class="stat-card stat-active">
+        <div class="stat-num">{{ activeCount }}</div>
+        <div class="stat-lbl">Active</div>
+      </div>
+      <div class="stat-card stat-inactive">
+        <div class="stat-num">{{ inactiveCount }}</div>
+        <div class="stat-lbl">Inactive</div>
+      </div>
+    </div>
+
+    <!-- Create Form (HR only) -->
+    <div class="form-card" *ngIf="showCreateForm && isHR">
+      <h3>Create New Project</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Project Name *</label>
+          <input type="text" [(ngModel)]="createForm.name"
+            class="form-control" placeholder="e.g. Mobile App Development" />
+        </div>
+        <div class="form-group">
+          <label>Project Code *</label>
+          <input type="text" [(ngModel)]="createForm.code"
+            class="form-control" placeholder="e.g. MAD" maxlength="10" style="text-transform:uppercase" />
+        </div>
+        <div class="form-group">
+          <label>Client Name</label>
+          <input type="text" [(ngModel)]="createForm.clientName"
+            class="form-control" placeholder="e.g. Acme Corp (optional)" />
+        </div>
+      </div>
+      <button class="btn-primary" (click)="createProject()" [disabled]="createLoading">
+        {{ createLoading ? 'Creating...' : 'Create Project' }}
+      </button>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <button [class.active]="filterActive === 'all'" (click)="filterActive = 'all'">
+        All ({{ projects.length }})
+      </button>
+      <button [class.active]="filterActive === 'active'" (click)="filterActive = 'active'">
+        Active ({{ activeCount }})
+      </button>
+      <button [class.active]="filterActive === 'inactive'" (click)="filterActive = 'inactive'">
+        Inactive ({{ inactiveCount }})
+      </button>
+    </div>
+
+    <!-- Loading -->
+    <div class="loading-box" *ngIf="loading">
+      <div class="spinner"></div>
+      <p>Loading projects...</p>
+    </div>
+
+    <!-- Projects table -->
+    <div class="card" *ngIf="!loading">
+      <div class="empty-state" *ngIf="filteredProjects.length === 0">
+        <div class="empty-icon">📁</div>
+        <p>No projects found.</p>
+        <span *ngIf="isHR && filterActive === 'all'">Click "+ New Project" to create one.</span>
+      </div>
+
+      <table class="data-table" *ngIf="filteredProjects.length > 0">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Project Name</th>
+            <th>Client</th>
+            <th>Status</th>
+            <th *ngIf="isHR">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of filteredProjects">
+            <td><span class="code-badge">{{ p.code }}</span></td>
+            <td><strong>{{ p.name }}</strong></td>
+            <td class="client-col">{{ p['clientName'] || '—' }}</td>
+            <td>
+              <span class="status-badge" [class.status-active]="p.isActive" [class.status-inactive]="!p.isActive">
+                {{ p.isActive ? '✅ Active' : '⛔ Inactive' }}
+              </span>
+            </td>
+            <td *ngIf="isHR">
+              <button *ngIf="p.isActive" class="btn-deactivate"
+                (click)="deactivateProject(p.id, p.name)">
+                Deactivate
+              </button>
+              <span *ngIf="!p.isActive" class="text-muted">—</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>

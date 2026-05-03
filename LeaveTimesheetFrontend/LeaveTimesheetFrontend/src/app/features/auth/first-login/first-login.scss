@@ -1,0 +1,88 @@
+// Same as forgot-password.component.scss — copy it
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+
+  .auth-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    width: 420px;
+    overflow: hidden;
+
+    .auth-header {
+      background: #1F4E78; color: white;
+      text-align: center; padding: 24px 20px;
+      h1 { font-size: 2rem; font-weight: 700; margin: 0; }
+      p  { font-size: 0.85rem; opacity: 0.8; margin: 4px 0 0; }
+    }
+
+    .auth-body {
+      padding: 30px;
+
+      .info-box {
+        background: #fff8e1;
+        border: 1px solid #ffe082;
+        color: #7a5800;
+        padding: 12px 14px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .error-msg {
+        background: #fff0f0;
+        border: 1px solid #ffcccc;
+        color: #c00;
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+      }
+
+      .form-group {
+        margin-bottom: 14px;
+        label {
+          display: block;
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: #555;
+          margin-bottom: 5px;
+        }
+        .form-control {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          font-size: 0.9rem;
+          box-sizing: border-box;
+          &:focus { outline: none; border-color: #2E75B6; }
+        }
+      }
+
+      .btn-primary {
+        width: 100%;
+        padding: 11px;
+        background: #1F4E78;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover:not(:disabled) { background: #2E75B6; }
+        &:disabled { opacity: 0.6; cursor: not-allowed; }
+      }
+
+      .back-link {
+        text-align: center;
+        margin-top: 16px;
+        a { color: #2E75B6; text-decoration: none; font-size: 0.85rem; }
+      }
+    }
+  }
+}

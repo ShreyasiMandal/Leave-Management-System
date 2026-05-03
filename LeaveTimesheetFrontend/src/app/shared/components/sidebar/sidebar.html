@@ -1,0 +1,79 @@
+<aside class="sidebar">
+  <nav class="nav-menu">
+
+    <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+      <span class="icon">🏠</span>
+      <span>Dashboard</span>
+    </a>
+
+    <div class="nav-section">LEAVE</div>
+
+    <a routerLink="/leaves" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+      <span class="icon">📋</span>
+      <span>My Leaves</span>
+    </a>
+
+    <a routerLink="/leaves/apply" routerLinkActive="active" class="nav-item">
+      <span class="icon">➕</span>
+      <span>Apply Leave</span>
+    </a>
+
+    <a routerLink="/leaves/balance" routerLinkActive="active" class="nav-item">
+      <span class="icon">⚖️</span>
+      <span>Leave Balance</span>
+    </a>
+
+    <a *ngIf="isManager" routerLink="/leaves/approval"
+       routerLinkActive="active" class="nav-item">
+      <span class="icon">✅</span>
+      <span>Leave Approvals</span>
+    </a>
+
+    <a routerLink="/holidays" routerLinkActive="active" class="nav-item">
+      <span class="icon">🗓️</span>
+      <span>Holidays</span>
+    </a>
+
+    <div class="nav-section">TIMESHEET</div>
+
+    <a routerLink="/timesheets" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+      <span class="icon">⏱️</span>
+      <span>My Timesheet</span>
+    </a>
+
+    <a *ngIf="isManager" routerLink="/timesheets/approval"
+       routerLinkActive="active" class="nav-item">
+      <span class="icon">📝</span>
+      <span>Timesheet Approvals</span>
+    </a>
+
+    <a routerLink="/projects" routerLinkActive="active" class="nav-item">
+      <span class="icon">📁</span>
+      <span>Projects</span>
+    </a>
+
+    <div class="nav-section" *ngIf="isManager">PEOPLE</div>
+
+    <a *ngIf="isManager" routerLink="/employees"
+       routerLinkActive="active" class="nav-item">
+      <span class="icon">👥</span>
+      <span>Employees</span>
+    </a>
+
+    <div class="nav-section" *ngIf="isHR">REPORTS</div>
+
+    <a *ngIf="isHR" routerLink="/reports"
+       routerLinkActive="active" class="nav-item">
+      <span class="icon">📊</span>
+      <span>Reports</span>
+    </a>
+
+    <div class="nav-section">OTHER</div>
+
+    <a routerLink="/notifications" routerLinkActive="active" class="nav-item">
+      <span class="icon">🔔</span>
+      <span>Notifications</span>
+    </a>
+
+  </nav>
+</aside>

@@ -1,0 +1,206 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <h1>Reports & Analytics</h1>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button [class.active]="activeTab === 'leave'"
+        (click)="switchTab('leave')" class="tab-btn">
+        📋 Leave Reports
+      </button>
+      <button [class.active]="activeTab === 'timesheet'"
+        (click)="switchTab('timesheet')" class="tab-btn">
+        ⏱️ Timesheet Reports
+      </button>
+      <button [class.active]="activeTab === 'attendance'"
+        (click)="switchTab('attendance')" class="tab-btn">
+        📊 Attendance Dashboard
+      </button>
+    </div>
+
+    <!-- LEAVE REPORT -->
+    <div *ngIf="activeTab === 'leave'">
+      <div class="filter-card">
+        <div class="filter-grid">
+          <div class="form-group">
+            <label>Start Date</label>
+            <input type="date" [(ngModel)]="leaveFilter.startDate"
+              class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label>End Date</label>
+            <input type="date" [(ngModel)]="leaveFilter.endDate"
+              class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label>Leave Type</label>
+            <input type="text" [(ngModel)]="leaveFilter.leaveType"
+              class="form-control" placeholder="Annual Leave..." />
+          </div>
+          <div class="form-group">
+            <label>Status</label>
+            <select [(ngModel)]="leaveFilter.status" class="form-control">
+              <option value="">All</option>
+              <option value="Approved">Approved</option>
+              <option value="Pending">Pending</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button class="btn-search" (click)="loadLeaveReport()">
+            🔍 Search
+          </button>
+          <button class="btn-export" (click)="exportLeave()">
+            📥 Export Excel
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="loading" *ngIf="loading">Loading...</div>
+        <table class="data-table"
+          *ngIf="!loading && leaveRows.length > 0">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Department</th>
+              <th>Leave Type</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Days</th>
+              <th>Status</th>
+              <th>Applied On</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let r of leaveRows">
+              <td>{{ r.employeeName }}</td>
+              <td>{{ r.department || '—' }}</td>
+              <td>{{ r.leaveType }}</td>
+              <td>{{ r.startDate | date:'dd MMM yyyy' }}</td>
+              <td>{{ r.endDate   | date:'dd MMM yyyy' }}</td>
+              <td><strong>{{ r.days }}</strong></td>
+              <td>
+                <span [class]="'status-' + r.status.toLowerCase()"
+                  class="status-badge">
+                  {{ r.status }}
+                </span>
+              </td>
+              <td>{{ r.appliedOn | date:'dd MMM yyyy' }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="empty"
+          *ngIf="!loading && leaveRows.length === 0">
+          No leave data found for selected filters.
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMESHEET REPORT -->
+    <div *ngIf="activeTab === 'timesheet'">
+      <div class="filter-card">
+        <div class="filter-grid">
+          <div class="form-group">
+            <label>Start Date</label>
+            <input type="date" [(ngModel)]="tsFilter.startDate"
+              class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label>End Date</label>
+            <input type="date" [(ngModel)]="tsFilter.endDate"
+              class="form-control"/>
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button class="btn-search" (click)="loadTimesheetReport()">
+            🔍 Search
+          </button>
+          <button class="btn-export" (click)="exportTimesheet()">
+            📥 Export Excel
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="loading" *ngIf="loading">Loading...</div>
+        <table class="data-table"
+          *ngIf="!loading && tsRows.length > 0">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Project</th>
+              <th>Week Start</th>
+              <th>Total Hours</th>
+              <th>Category</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let r of tsRows">
+              <td>{{ r.employeeName }}</td>
+              <td>{{ r.projectName }}</td>
+              <td>{{ r.weekStart | date:'dd MMM yyyy' }}</td>
+              <td><strong>{{ r.totalHours }}</strong></td>
+              <td>{{ r.category }}</td>
+              <td>
+                <span [class]="'status-' + r.status.toLowerCase()"
+                  class="status-badge">
+                  {{ r.status }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="empty"
+          *ngIf="!loading && tsRows.length === 0">
+          No timesheet data found.
+        </div>
+      </div>
+    </div>
+
+    <!-- ATTENDANCE DASHBOARD -->
+    <div *ngIf="activeTab === 'attendance'">
+      <div class="filter-card">
+        <div class="filter-grid">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" [(ngModel)]="attendanceDate"
+              class="form-control"/>
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button class="btn-search" (click)="loadAttendance()">
+            🔍 Get Summary
+          </button>
+        </div>
+      </div>
+
+      <div class="attendance-cards" *ngIf="attendance">
+        <div class="att-card present">
+          <div class="att-val">{{ attendance.presentCount }}</div>
+          <div class="att-lbl">Present</div>
+        </div>
+        <div class="att-card leave">
+          <div class="att-val">{{ attendance.onLeaveCount }}</div>
+          <div class="att-lbl">On Leave</div>
+        </div>
+        <div class="att-card absent">
+          <div class="att-val">{{ attendance.absentCount }}</div>
+          <div class="att-lbl">Absent</div>
+        </div>
+        <div class="att-card total">
+          <div class="att-val">{{ attendance.totalCount }}</div>
+          <div class="att-lbl">Total</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>

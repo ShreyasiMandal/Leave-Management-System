@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+
+<div class="layout">
+  <app-sidebar></app-sidebar>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Welcome back, {{ fullName }} 👋</h1>
+      <p>{{ role }} — {{ currentYear }}</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-grid">
+      <div class="stat-card blue">
+        <div class="stat-icon">📋</div>
+        <div class="stat-info">
+          <div class="stat-value">{{ pendingLeaveCount }}</div>
+          <div class="stat-label">Pending Leaves</div>
+        </div>
+      </div>
+
+      <div class="stat-card green" *ngFor="let b of balances.slice(0,3)">
+        <div class="stat-icon">⚖️</div>
+        <div class="stat-info">
+          <div class="stat-value">{{ b.available }}</div>
+          <div class="stat-label">{{ b.leaveTypeName }} Available</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leave Balance Table -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Leave Balance — {{ currentYear }}</h2>
+        <a routerLink="/leaves/apply" class="btn-primary">Apply Leave</a>
+      </div>
+
+      <table class="data-table" *ngIf="balances.length > 0">
+        <thead>
+          <tr>
+            <th>Leave Type</th>
+            <th>Entitled</th>
+            <th>Used</th>
+            <th>Pending</th>
+            <th>Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let b of balances">
+            <td>
+              <span class="badge-code">{{ b.leaveTypeCode }}</span>
+              {{ b.leaveTypeName }}
+            </td>
+            <td>{{ b.entitled }}</td>
+            <td class="used">{{ b.used }}</td>
+            <td class="pending">{{ b.pending }}</td>
+            <td class="available"><strong>{{ b.available }}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="empty" *ngIf="balances.length === 0">
+        No balance data found.
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <a routerLink="/leaves" class="quick-card">
+        <span class="ql-icon">📋</span>
+        <span>View My Leaves</span>
+      </a>
+      <a routerLink="/timesheets" class="quick-card">
+        <span class="ql-icon">⏱️</span>
+        <span>Log Timesheet</span>
+      </a>
+      <a routerLink="/notifications" class="quick-card">
+        <span class="ql-icon">🔔</span>
+        <span>Notifications</span>
+      </a>
+    </div>
+
+  </main>
+</div>

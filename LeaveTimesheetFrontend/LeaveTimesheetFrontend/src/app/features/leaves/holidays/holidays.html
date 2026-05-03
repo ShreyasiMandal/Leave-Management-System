@@ -1,0 +1,121 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <div>
+        <h1>🗓️ Holidays</h1>
+        <p class="subtitle">Public holidays and office closures</p>
+      </div>
+      <div class="header-actions">
+        <select [(ngModel)]="selectedYear" (change)="loadHolidays()" class="year-select">
+          <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+        </select>
+        <button *ngIf="isHR" class="btn-secondary" (click)="showCopyForm = !showCopyForm">
+          📋 Copy Year
+        </button>
+        <button *ngIf="isHR" class="btn-primary" (click)="showCreateForm = !showCreateForm">
+          {{ showCreateForm ? 'Cancel' : '+ Add Holiday' }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Message bar -->
+    <div class="msg-bar" *ngIf="message" [class.msg-error]="messageType === 'error'">
+      {{ message }}
+      <button (click)="message=''" class="close-btn">✕</button>
+    </div>
+
+    <!-- Create Holiday Form (HR only) -->
+    <div class="form-card" *ngIf="showCreateForm && isHR">
+      <h3>Add New Holiday</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Holiday Name *</label>
+          <input type="text" [(ngModel)]="createForm.name"
+            class="form-control" placeholder="e.g. Diwali" />
+        </div>
+        <div class="form-group">
+          <label>Date *</label>
+          <input type="date" [(ngModel)]="createForm.date" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Applicability</label>
+          <select [(ngModel)]="createForm.applicability" class="form-control">
+            <option value="All">All Employees</option>
+            <option value="Department">Department Specific</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" (click)="createHoliday()" [disabled]="createLoading">
+        {{ createLoading ? 'Saving...' : 'Add Holiday' }}
+      </button>
+    </div>
+
+    <!-- Copy Calendar Form (HR only) -->
+    <div class="form-card" *ngIf="showCopyForm && isHR">
+      <h3>Copy Holiday Calendar</h3>
+      <p class="form-hint">Copy all holidays from one year to another.</p>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>From Year</label>
+          <select [(ngModel)]="copyForm.fromYear" class="form-control">
+            <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>To Year</label>
+          <select [(ngModel)]="copyForm.toYear" class="form-control">
+            <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-secondary" (click)="copyCalendar()" [disabled]="copyLoading">
+        {{ copyLoading ? 'Copying...' : '📋 Copy Holidays' }}
+      </button>
+    </div>
+
+    <!-- Loading -->
+    <div class="loading-box" *ngIf="loading">
+      <div class="spinner"></div>
+      <p>Loading holidays...</p>
+    </div>
+
+    <!-- Holiday List -->
+    <div class="holidays-grid" *ngIf="!loading">
+
+      <div class="empty-state" *ngIf="holidays.length === 0">
+        <div class="empty-icon">🗓️</div>
+        <p>No holidays found for {{ selectedYear }}.</p>
+        <span *ngIf="isHR">Click "+ Add Holiday" to create one.</span>
+      </div>
+
+      <div class="holiday-card" *ngFor="let h of holidays">
+        <div class="holiday-date-block">
+          <div class="holiday-month">{{ h.date | date:'MMM' }}</div>
+          <div class="holiday-day">{{ h.date | date:'dd' }}</div>
+          <div class="holiday-weekday">{{ getDayOfWeek(h.date) }}</div>
+        </div>
+        <div class="holiday-info">
+          <div class="holiday-name">{{ h.name }}</div>
+          <div class="holiday-meta">
+            <span class="badge badge-applicability">{{ h.applicability }}</span>
+            <span class="badge badge-year">{{ h.year }}</span>
+          </div>
+        </div>
+        <div class="holiday-actions" *ngIf="isHR">
+          <button class="btn-delete" (click)="deleteHoliday(h.id, h.name)"
+            title="Delete holiday">🗑️</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Summary footer -->
+    <div class="summary-bar" *ngIf="!loading && holidays.length > 0">
+      <span>📊 Total: <strong>{{ holidays.length }}</strong> holidays in {{ selectedYear }}</span>
+    </div>
+
+  </main>
+</div>

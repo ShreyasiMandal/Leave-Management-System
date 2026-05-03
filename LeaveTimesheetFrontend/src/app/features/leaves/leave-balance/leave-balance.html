@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <h1>Leave Balance</h1>
+      <div class="year-selector">
+        <label>Year:</label>
+        <select [(ngModel)]="selectedYear" (change)="onYearChange()"
+          class="year-select">
+          <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="loading-state" *ngIf="loading">
+      <div class="spinner"></div>
+      <p>Loading balances...</p>
+    </div>
+
+    <div class="empty-state"
+         *ngIf="!loading && filteredBalances.length === 0">
+      <p>No balance data for {{ selectedYear }}.</p>
+    </div>
+
+    <div class="balance-grid"
+         *ngIf="!loading && filteredBalances.length > 0">
+      <div class="balance-card" *ngFor="let b of filteredBalances"
+           [class.maternity-card]="b.leaveTypeCode === 'ML'">
+
+        <div class="card-header">
+          <div class="leave-code">{{ b.leaveTypeCode }}</div>
+          <div class="leave-name">{{ b.leaveTypeName }}</div>
+          <span class="paid-badge" [class.unpaid]="!b.isPaid">
+            {{ b.isPaid ? 'Paid' : 'Unpaid' }}
+          </span>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-value neutral">{{ b.entitled }}</div>
+            <div class="stat-label">Entitled</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value used">{{ b.used }}</div>
+            <div class="stat-label">Used</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value pending">{{ b.pending }}</div>
+            <div class="stat-label">Pending</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value available">{{ b.available }}</div>
+            <div class="stat-label">Available</div>
+          </div>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 [style.width.%]="getUsedPercent(b)">
+            </div>
+          </div>
+          <span class="progress-label">{{ getUsedPercent(b) }}% used</span>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>

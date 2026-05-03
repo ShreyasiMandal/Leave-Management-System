@@ -1,0 +1,140 @@
+<app-navbar></app-navbar>
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <main class="main-content">
+
+    <div class="page-header">
+      <div>
+        <h1>My Timesheet</h1>
+        <div class="week-nav">
+          <label>Select Date:</label>
+          <input type="date" [(ngModel)]="selectedDate"
+            (change)="loadWeek()" class="date-input" />
+        </div>
+      </div>
+      <button class="btn-primary" (click)="showLogForm = !showLogForm">
+        {{ showLogForm ? 'Cancel' : '+ Log Time' }}
+      </button>
+    </div>
+
+    <div class="msg-bar" *ngIf="message">
+      {{ message }}
+      <button (click)="message=''" class="close-btn">✕</button>
+    </div>
+
+    <!-- Log Entry Form -->
+    <div class="form-card" *ngIf="showLogForm">
+      <h3>Log Time Entry</h3>
+      <div class="error-msg" *ngIf="logError">{{ logError }}</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Date *</label>
+          <input type="date" [(ngModel)]="logForm.date" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Project *</label>
+          <select [(ngModel)]="logForm.projectId" class="form-control">
+            <option value="0" disabled>Select project</option>
+            <option *ngFor="let p of projects" [value]="p.id">
+              {{ p.name }}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Hours *</label>
+          <input type="number" [(ngModel)]="logForm.hours"
+            min="0.5" max="12" step="0.5" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select [(ngModel)]="logForm.category" class="form-control">
+            <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="text" [(ngModel)]="logForm.description"
+          class="form-control" placeholder="What did you work on?" />
+      </div>
+      <button class="btn-primary" (click)="logEntry()"
+        [disabled]="logLoading">
+        {{ logLoading ? 'Logging...' : 'Log Entry' }}
+      </button>
+    </div>
+
+    <!-- Week Summary -->
+    <div class="week-summary" *ngIf="weekView">
+      <div class="summary-card">
+        <div class="sum-val">{{ weekView.totalHours }}</div>
+        <div class="sum-lbl">Total Hours</div>
+      </div>
+      <div class="summary-card">
+        <div class="sum-val">{{ weekView.entries.length }}</div>
+        <div class="sum-lbl">Entries</div>
+      </div>
+      <div class="summary-card">
+        <span [class]="getStatusClass(weekView.weekStatus)"
+          class="week-status-badge">
+          {{ weekView.weekStatus }}
+        </span>
+        <div class="sum-lbl">Week Status</div>
+      </div>
+      <div class="summary-card" *ngIf="weekView.weekStatus === 'Draft'">
+        <button class="btn-submit-week" (click)="submitWeek()">
+          Submit Week for Approval
+        </button>
+      </div>
+    </div>
+
+    <!-- Entries Table -->
+    <div class="card" *ngIf="weekView">
+      <div class="card-header">
+        <h2>
+          Week: {{ weekView.weekStart | date:'dd MMM' }} —
+          {{ weekView.weekEnd | date:'dd MMM yyyy' }}
+        </h2>
+      </div>
+
+      <div class="loading" *ngIf="loading">Loading...</div>
+
+      <table class="data-table"
+        *ngIf="!loading && weekView.entries.length > 0">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Project</th>
+            <th>Hours</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of weekView.entries">
+            <td>{{ e.date | date:'EEE dd MMM' }}</td>
+            <td>{{ e.projectName }}</td>
+            <td><strong>{{ e.hours }}</strong></td>
+            <td>{{ e.category }}</td>
+            <td class="desc">{{ e.description || '—' }}</td>
+            <td>
+              <span [class]="getStatusClass(e.status)"
+                class="status-badge">
+                {{ e.status }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="empty"
+        *ngIf="!loading && weekView.entries.length === 0">
+        No entries for this week.
+        <span *ngIf="showLogForm === false">
+          Click "+ Log Time" to add an entry.
+        </span>
+      </div>
+    </div>
+
+  </main>
+</div>
